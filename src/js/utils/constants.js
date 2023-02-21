@@ -27,14 +27,14 @@ export const BASE_MEASURES = {
   margins: {
     top: 10,
     bottom: 10,
-    left: 20,
-    right: 20,
+    left: 0, //20
+    right: 0, //20
   },
   paddings: {
-    top: 20,
-    bottom: 40,
-    left: 30,
-    right: 10,
+    top: 0, //20
+    bottom: 0, //40
+    left: 0, //30
+    right: 0, //10
   },
 
   baseHeight: 240,
@@ -76,7 +76,7 @@ export const CHART_POST_ANIMATE_TIMEOUT = 400;
 export const DEFAULT_AXIS_CHART_TYPE = "line";
 export const AXIS_DATASET_CHART_TYPES = ["line", "bar"];
 
-export const LEGEND_ITEM_WIDTH = 150;
+export const LEGEND_ITEM_WIDTH = 120; // 150
 export const SERIES_LABEL_SPACE_RATIO = 0.6;
 
 export const BAR_CHART_SPACE_RATIO = 0.5;

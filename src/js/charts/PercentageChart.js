@@ -16,16 +16,7 @@ export default class PercentageChart extends AggregationChart {
 
     let b = this.barOptions;
     b.height = b.height || PERCENTAGE_BAR_DEFAULT_HEIGHT;
-
-    m.paddings.left = 0;
-    m.paddings.right = 0;
-    m.margins.left = 0;
-    m.margins.right = 0;
-    // m.paddings.right = 60;
-    m.legendHeight = 60;
     m.baseHeight = (b.height + b.depth * 0.5) * 8;
-
-    console.log( m, b)
   }
 
   setupComponents() {
@@ -61,6 +52,7 @@ export default class PercentageChart extends AggregationChart {
 
     s.xPositions = [];
     s.widths = [];
+    
 
     let xPos = 0;
     s.sliceTotals.map((value) => {

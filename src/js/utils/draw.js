@@ -14,8 +14,8 @@ export const AXIS_TICK_LENGTH = 6;
 const LABEL_MARGIN = 4;
 const LABEL_WIDTH = 25;
 const TOTAL_PADDING = 120;
-const LABEL_MAX_CHARS = 18;
-export const FONT_SIZE = 10;
+const LABEL_MAX_CHARS = 11; // 18 
+export const FONT_SIZE = 10; //12
 const BASE_LINE_COLOR = "#E2E6E9";
 
 function $(expr, con) {
@@ -347,7 +347,7 @@ export function legendDot(
 		y: 0,
 		dx: font_size + "px",
 		dy: font_size / 3 + "px",
-		"font-size": font_size * 1.6 + "px",
+		"font-size": FONT_SIZE * 1.2 + "px", //1.6
 		"text-anchor": "start",
 		innerHTML: label,
 	});
@@ -360,7 +360,7 @@ export function legendDot(
 			y: FONT_SIZE + 10,
 			dx: FONT_SIZE + "px",
 			dy: FONT_SIZE / 3 + "px",
-			"font-size": FONT_SIZE * 1.2 + "px",
+			"font-size": FONT_SIZE * 1.2 + "px", // 1.2
 			"text-anchor": "start",
 			innerHTML: value,
 		});
@@ -390,7 +390,7 @@ export function makeText(className, x, y, content, options = {}) {
 		x: x,
 		y: y,
 		dy: dy + "px",
-		"font-size": fontSize + "px",
+		"font-size": FONT_SIZE + "px",
 		fill: fill,
 		"text-anchor": textAnchor,
 		innerHTML: content,
